@@ -13,18 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hola', function () {
-    return view('hola');
+
+
+Route::get('/pagina_1', function () {
+    return view('pagina_1');
 });
 
-Route::get('/defqon', function () {
-    return view('defqon');
+Route::get('/pagina_2', function () {
+    return view('pagina_2');
+});
+
+Route::get('/pagina_3', function () {
+    return view('pagina_3');
+});
+
+Route::get('/pagina_4', function () {
+    return view('pagina_4');
+});
+
+Route::get('/', function () {
+    return view('pagina_2_titolo');
 });
 
 Route::get('/', function () {
     return view('home');
-});
-
-Route::get('/title_defqon', function () {
-    return view('title_defqon');
 });
