@@ -1,47 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+    {{-- composer create-project --prefer-dist laravel/laravel:^7.0 laravel-primi-passi
+    cd laravel-primi-passi
+    php artisan serve --}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-</head>
 
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <style>
-        div ul {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Homepage</title>
+    </head>
 
-        div ul li a {
-            text-decoration: none;
-        }
-    </style>
+    <body>
 
-    <h1>Welcome Home</h1>
+        <style>
+            div ul {
+                display: flex;
+                gap: 20px;
+                list-style: none;
+            }
 
-    <header>
+            div ul li a {
+                text-decoration: none;
+            }
+        </style>
 
-        @php
+        <h1>Welcome Home</h1>
 
-            $links = ['pagina_1', 'pagina_2', 'pagina_3', 'pagina_4'];
+        <header>
 
-        @endphp
+            @php
 
-        <div>
-            <ul>
-                @foreach ($links as $link)
-                    <li><a href="{{ $link }}">{{ $link }}</a></li>
-                @endforeach
-            </ul>
-        </div>
+                $links = ['pagina_1', 'pagina_2', 'pagina_3', 'pagina_4'];
 
-    </header>
+            @endphp
 
-</body>
+            <div>
+                <ul>
+                    @foreach ($links as $link)
+                        <li><a href="{{ $link }}">{{ $link }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
 
-</html>
+        </header>
+
+    </body>
+
+    </html>
