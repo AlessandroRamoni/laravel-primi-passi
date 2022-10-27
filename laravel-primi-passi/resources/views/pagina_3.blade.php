@@ -12,6 +12,18 @@
 
     <h1>Benvenuti a pagina 3</h1>
 
+    @php
+        $festivals = ['defqon', 'qlimax', 'inqontrol', 'exqlusive', 'decibel', 'thunderdome', 'dominator'];
+    @endphp
+
+    <section>
+        <ul>
+            @foreach ($festivals as $festival)
+                <li>{{ $festival }}</li>
+            @endforeach
+        </ul>
+    </section>
+
 </body>
 
 </html>

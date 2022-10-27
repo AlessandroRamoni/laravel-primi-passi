@@ -15,6 +15,9 @@
             display: flex;
             gap: 20px;
             list-style: none;
+        }
+
+        div ul li a {
             text-decoration: none;
         }
     </style>
