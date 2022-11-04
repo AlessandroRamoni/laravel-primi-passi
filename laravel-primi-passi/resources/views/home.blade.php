@@ -26,7 +26,7 @@
 
             @endphp
 
-            <div>
+            <div class="elenco">
                 <ul>
                     @foreach ($links as $link)
                         <li><a href="{{ $link }}">{{ $link }}</a></li>
