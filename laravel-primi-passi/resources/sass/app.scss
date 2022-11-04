@@ -3,3 +3,13 @@
     text-align: center;
     color: green;
 }
+
+header div ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header div ul li a {
+    text-decoration: none;
+}

@@ -16,18 +16,6 @@
 
     <body>
 
-        <style>
-            div ul {
-                display: flex;
-                gap: 20px;
-                list-style: none;
-            }
-
-            div ul li a {
-                text-decoration: none;
-            }
-        </style>
-
         <h1>Welcome Home</h1>
 
         <header>
