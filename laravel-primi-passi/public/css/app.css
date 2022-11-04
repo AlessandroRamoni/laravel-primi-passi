@@ -1,5 +1,17 @@
 * {
-  text-align: center;
-  color: green;
+    color: rgb(0, 51, 128);
 }
 
+h1 {
+    text-align: center;
+}
+
+header .elenco ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header .elenco ul li a {
+    text-decoration: none;
+}
